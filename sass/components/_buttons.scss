@@ -1,0 +1,46 @@
+.btn-default {
+    &:link, &:visited {
+    text-decoration: none;
+    color: $font-color-secondary;
+    display: inline-block;
+    padding: 1rem 5rem;
+    border: .2rem solid $font-color-secondary;
+    
+    background-color: $color-white;   
+    transition: all .2s; 
+    }
+
+    &:hover {
+        color: $color-white;
+        background-color: $color-blue-dark;        
+        transform: translateY(-.3rem);
+    }
+
+    &:active {
+        @extend .btn-default:hover;        
+        transform: translateY(0);
+    }
+}
+
+/*
+.nav-btn {
+    &:link, &:visited {
+        text-decoration: none;
+        color: $color-white;
+        display: inline-block;
+        padding: 3rem 5rem;
+        border: 2rem solid $font-color-secondary;           
+    }
+    
+    &:hover {
+        color: $color-blue-dark;
+        background-color: $color-white;        
+    }
+    
+    &:active {
+        @extend .nav-btn:hover;        
+    }
+
+}
+
+*/

@@ -1,0 +1,14 @@
+{
+  "name": "spiro",
+  "version": "1.0.0",
+  "description": "website for spiro web design agency",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Emmanuel Idika",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

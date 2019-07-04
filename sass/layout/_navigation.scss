@@ -1,0 +1,42 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    font-weight: 500;
+    font-size: 1.8rem;
+    font-family: $headings-font;
+
+    &__logo {
+        height: 5rem;   
+        cursor: pointer;
+    }
+
+    &__list {
+        list-style-type: none;
+        letter-spacing: 0.1rem;
+     }
+
+    &__item {
+        display: inline-block;
+        padding: 0 4rem;  
+        
+        & a:link, & a:visited {
+            color: $color-white;
+            display: inherit;
+            text-decoration: none;
+            transition: all .4s;   
+            backface-visibility: hidden;     
+        }
+
+        & a:hover {
+            @include navigationBorder;
+            transform: translateY(-0.3rem);    
+        }
+    
+        & a:active {
+            @include navigationBorder;
+            transform: translateY(0);
+        }
+    }     
+}

@@ -1,0 +1,26 @@
+body {
+    font-family: $default-font;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: $font-color-primary;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $headings-font;
+    text-align: center;
+    line-height: 1.4;
+}
+
+h2 {
+    color: $font-color-secondary;    
+    font-weight: 600;
+    font-size: 3.5rem;
+}
+
+h3 {
+    color: $font-color-secondary;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+

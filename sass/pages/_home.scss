@@ -1,0 +1,49 @@
+.about-section {
+    max-width: 70%;
+    padding: 0 10%;
+    margin: 11rem auto;    
+}
+
+.features-section {
+    @extend .about-section;
+
+    max-width: 90%;
+    display: flex;
+    justify-content: space-around;
+
+    &__box {
+        text-align: center;
+
+        &:not(:last-child) {
+            margin-right: 4rem;
+        }
+    }    
+}
+
+.pricing-section {
+    @extend .about-section;
+
+    max-width: 90%;
+    text-align: center;
+
+    &__light {
+        color: $color-blue;
+    }
+}
+
+.contact-section {
+    @extend .about-section;
+
+    max-width: 100%;
+    padding: 10rem 15%;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: $color-blue-light;
+
+    &__logo {
+        height: 8rem;
+    }
+}
+
+
+
