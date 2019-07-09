@@ -22,25 +22,3 @@
     }
 }
 
-/*
-.nav-btn {
-    &:link, &:visited {
-        text-decoration: none;
-        color: $color-white;
-        display: inline-block;
-        padding: 3rem 5rem;
-        border: 2rem solid $font-color-secondary;           
-    }
-    
-    &:hover {
-        color: $color-blue-dark;
-        background-color: $color-white;        
-    }
-    
-    &:active {
-        @extend .nav-btn:hover;        
-    }
-
-}
-
-*/

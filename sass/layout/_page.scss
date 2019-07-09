@@ -1,0 +1,75 @@
+.intro-section {
+    max-width: 100%;
+    padding: 0 15%;
+    margin: 6rem auto;  
+}
+
+.boxed-section {
+    @extend .intro-section;
+    padding: 0 10%;
+    
+    display: flex;
+    justify-content: space-between;
+
+    &__box {
+        text-align: center;
+
+        &:not(:last-child) {
+            margin-right: 6rem;
+        }
+    }    
+}
+
+.boxed-section__box {
+    padding: 3rem 2rem;
+    border: .2rem solid $color-blue;
+
+    & p {
+        font-size: 1.5rem;
+    }
+}
+
+.currency {
+    color: $color-blue;
+    font-weight: 400;
+    font-size: 6rem;
+}
+
+.extra-section {
+    @extend .intro-section;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;    
+
+    &__light {
+        color: $color-blue;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 1rem 0;
+
+
+        &--icon {
+            flex: 1;
+            padding-top: 4rem;
+            align-self: center;
+        }
+
+        &--text {
+            flex: 5;
+            align-self: center;
+        }
+
+        &--btn {
+            align-self: center;
+        }
+    }
+}
+
+.form-section {
+    @extend .intro-section;
+}

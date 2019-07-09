@@ -36,12 +36,12 @@
             }
 
             & a:hover {
-                @include navigationBorder;
+                @include hero-navigation-border;
                 transform: translateY(-0.3rem); 
             }
 
             & a:active {
-                @include navigationBorder;
+                @include hero-navigation-border;
                 transform: translateY(0); 
             }
         }

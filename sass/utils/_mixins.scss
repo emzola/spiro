@@ -1,11 +1,59 @@
+@mixin navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    font-weight: 500;
+    font-size: 1.8rem;
+    font-family: $headings-font;
+
+    &__logo {
+        height: 5rem;   
+        cursor: pointer;
+    }
+
+    &__list {
+        list-style-type: none;
+        letter-spacing: 0.1rem;
+     }
+
+    &__item {
+        display: inline-block;
+        padding: 0 4rem;  
+        
+        & a:link, & a:visited {
+            color: $color-white;
+            display: inherit;
+            text-decoration: none;
+            transition: all .4s;   
+            backface-visibility: hidden;     
+        }
+
+        & a:hover {
+            @include hero-navigation-border;
+            transform: translateY(-0.3rem);    
+        }
+    
+        & a:active {
+            @include hero-navigation-border;
+            transform: translateY(0);
+        }
+    }     
+}
+
+@mixin hero-navigation-border {
+    border-top: .15rem solid $color-white;
+    border-bottom: .15rem solid $color-white;
+}
+
+@mixin navigation-border {
+    border-top: .15rem solid $font-color-secondary;
+    border-bottom: .15rem solid $font-color-secondary;
+}
+
 @mixin CenterAlign {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);    
-}
-
-@mixin navigationBorder {
-    border-top: .15rem solid $color-white;
-    border-bottom: .15rem solid $color-white;
 }

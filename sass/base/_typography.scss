@@ -8,19 +8,28 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $headings-font;
-    text-align: center;
     line-height: 1.4;
+}
+
+h1 { 
+    color: $font-color-secondary;
+    font-weight: 600;
+    font-size: 5rem; 
+    line-height: 1.7;
+    
 }
 
 h2 {
     color: $font-color-secondary;    
     font-weight: 600;
     font-size: 3.5rem;
+    line-height: 1.5;
 }
 
 h3 {
     color: $font-color-secondary;
     font-weight: 500;
     font-size: 2.5rem;
+    line-height: 1.4;
 }
 
